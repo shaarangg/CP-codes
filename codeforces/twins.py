@@ -1,0 +1,20 @@
+n=int(input())
+a = list(map(int,input().split()))
+a.sort(reverse=True)
+a1=a[0]
+a.pop(0)
+count=1
+a2=0
+n=n-2
+while(a!=[]):
+    a2+=a[n]
+    if(a2>=a1):
+        a2-=a[n]
+        a1+=a[0]
+        count+=1
+        a.pop(0)
+        n-=1
+    else:
+        a.pop(n)
+        n-=1
+print(count)
