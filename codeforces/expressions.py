@@ -1,0 +1,5 @@
+a = int(input())
+b = int(input())
+c = int(input())
+maxs = max((a+b)*c,a*(b+c),a*b*c,a+b*c,a*b+c,a+b+c)
+print(maxs)
