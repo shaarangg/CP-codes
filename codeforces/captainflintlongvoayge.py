@@ -8,4 +8,4 @@ for i in range(t):
     s = "9"*(n-a)+"8"*(a)
     res.append(s)
 for i in res:
-    print(i)
+    print(i)  
