@@ -1,0 +1,20 @@
+n,m = map(int,input().split())
+c=0
+if(m%n==0):
+    m//=n
+    while(m>1):
+        if(m%6==0):
+            m//=6
+            c+=2
+        elif(m%3==0):
+            m//=3
+            c+=1
+        elif(m%2==0):
+            m//=2
+            c+=1
+        else:
+            print(-1)
+            exit()
+    print(c)
+else:
+    print(-1)
