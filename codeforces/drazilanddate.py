@@ -1,0 +1,9 @@
+a,b,s=map(int,input().split())
+p=abs(a)+abs(b)
+if(s<p):
+    print("No")
+else:
+    if(abs(s-p)%2==0):
+        print("Yes")
+    else:
+        print("No")
