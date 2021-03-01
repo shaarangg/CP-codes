@@ -1,3 +1,3 @@
-for i in range(2,round(6060421**0.5)):
-    if(6060421%i==0):
+for i in range(2,round(6578234**0.5)):
+    if(6578234%i==0):
         print(i)
