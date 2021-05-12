@@ -1,4 +1,4 @@
-a=['b','a','c']
-b=['a','b','c']
-if(a==b):
-    print(1)
+c="1"
+for i in range(8):
+    c = chr(ord(c)+1)
+    print(int(c*(5+1)))
