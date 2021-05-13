@@ -1,4 +1,3 @@
-c="1"
-for i in range(8):
-    c = chr(ord(c)+1)
-    print(int(c*(5+1)))
+a=[0,1,1,1,1]
+a=a*2
+print(a)
