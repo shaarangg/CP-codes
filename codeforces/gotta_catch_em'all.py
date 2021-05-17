@@ -1,0 +1,10 @@
+st = input()
+wd=[]
+wd.append(st.count('B'))
+wd.append(st.count('u')//2)
+wd.append(st.count('l'))
+wd.append(st.count('b'))
+wd.append(st.count('a')//2)
+wd.append(st.count('s'))
+wd.append(st.count('r'))
+print(min(wd))

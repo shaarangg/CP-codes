@@ -1,2 +1,1 @@
-for i in res:
-    print(i)
+print(j)
