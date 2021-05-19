@@ -1,3 +1,3 @@
-a=[0,1,1,1,1]
-a=a*2
-print(a)
+a=1
+if(a):
+    print("Hello")
