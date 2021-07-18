@@ -60,3 +60,9 @@ You may use an element of the array as many times as needed. <br/><br/>You may a
 ### Q. Write a function ```howSum(howSum, numbers)``` that takes in a targetSum and an array of numbers as arguements.
 The function should return an array containing any combination of elemnts that add up to exactly the targetSum. If there is no combination that adds up to the targetSum, then return null.
 So, as you can see using the memoization the time-complexity changes from O((n^m)*m), so here the time-complexity is (n^m)*m because the number of recursion calls = n^m and the it takes m-time to copy the old list and add an new element to O(n*m^2 ), here the it takes only n*m recursion calls and space complexity changed from O(m) to O(m^2), here m^2 is because the HashMap holds m keys with a list.
+
+<br/>
+
+## HowSum Memoization
+### Q. Write a function ```bestSum(howSum, numbers)``` that takes in a targetSum and an array of numbers as arguements.
+The function returns the shortest combination of numbers that add up to exactly the targetSum.
