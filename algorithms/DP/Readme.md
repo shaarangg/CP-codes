@@ -7,9 +7,10 @@ Memoization is the strategy where we calculate the states and store them so that
 <br>
 
 
-### Fibonacii memoization
+## Fibonacii memoization
+### Q. Write a funtion ```fib(n)``` that takes in a number as arguement. The function should return the n-th number of the fibonacii sequence.
 <p align="center">
-<img src="./imgs/fib6.png" alt="Image" width="50">
+<img src="./imgs/fib6.png" alt="Image" width="80">
 </p>
 
 As you can see, the time complexity changes from O(2^N) to O(N)
@@ -22,12 +23,11 @@ d{
 }
 ```
 
-# Grid-Traveler Problem <br/>
-## Q. Say that you are a traveler on a 2D grid. You begin in the top-left corner and your goal is to travel to the bottom-right corner. You may only move down right or left. <br/>
-## In how many ways can you travel to the goal on a grid with dimensions m*n?
+## Grid-Traveler Problem <br/>
+### Q. Say that you are a traveler on a 2D grid. You begin in the top-left corner and your goal is to travel to the bottom-right corner. You may only move down right or left. In how many ways can you travel to the goal on a grid with dimensions m*n? <br/>
 So, the ques can be soved easily with a time-complexity of O(n+m) using the memoization technique. We will store the grids that we have already calculated in a HashMap and use them to calculate the no. of ways of the bigger grids eg. for a  2,3 grid given in the image we can see that there are many grids that are repeating for eg. (1,2) so we can calculate the no. of ways of that grid once and store it in the HashMap. This method brings down the complexity from O(2^(n*m)) to O(n+m).
 <p align="center">
-<img src="./imgs/gt.png" alt="Image">
+<img src="./imgs/gt.png" alt="Image" width="90">
 </p>
 
 The hashMap will look something like this
