@@ -1,3 +1,3 @@
-a=1
-if(a):
+a = False
+if not a:
     print("Hello")
