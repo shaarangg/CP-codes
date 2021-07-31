@@ -1,3 +1,1 @@
-a = False
-if not a:
-    print("Hello")
+print(int(3.999))

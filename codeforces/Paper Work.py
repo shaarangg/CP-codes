@@ -11,7 +11,6 @@ for i in a:
         c = 0
         n = 1
     c += 1
-if n != 0:
-    f.append(c)
+f.append(c)
 print(len(f))
 print(*f)
