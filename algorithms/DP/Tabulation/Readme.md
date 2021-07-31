@@ -1,12 +1,8 @@
-# Dynamic Programing
-Dynamic problem is an algorithm technique based on reccurent formula, it is an algorithm which helps to solve overlapping sub-problems. Sometimes these sub-problems in dp are known as states. A good example of a dp problem is fibonacii series. A good trick or strategy to solve dp questions is to use memoization.
+# Tabulation (Bottom Up approach)
+Tabulation is the strategy which uses bottom-up approach which transitions from the base case and reaches its destination state the nth state. It uses a table to store all the values uptil nth state.
 <br>
 
-# Memoization
-Memoization is the strategy where we calculate the states and store them so that we don't have to calculate them again and again because a state can be present in many different parts of the solution of the problem.
-<br>
-
-# Memoization Recipe
+<!-- # Memoization Recipe
 1. Make it work.
     * visualize the problem as a tree
     * implement the tree using recursion
@@ -15,26 +11,27 @@ Memoization is the strategy where we calculate the states and store them so that
     * add a memo object 
     * add a base case to return memo values
     * store return values into the memo
-<br/>
+<br/> -->
 
 ## Fibonacii memoization
 ### Q. Write a funtion ```fib(n)``` that takes in a number as arguement. The function should return the n-th number of the fibonacii sequence.
+The code initializes the base cases which is 0 and 1 and the iterates through all the n elements adding the ith value to i+1 element and i+2 element.
 <p align="center">
-<img src="./imgs/fib6.png" alt="Image" width="300">
+<img src="./imgs/fibexp1.png" alt="Image" width="300">
+</p>
+<p align="center">
+<img src="./imgs/fibexp2.png" alt="Image" width="300">
+</p>
+Finally the final table will look something like this
+<p align="center">
+<img src="./imgs/fib.png" alt="Image" width="300">
 </p>
 
-As you can see, the time complexity changes from O(2^N) to O(N)
-and our HashMap which stores the states will look something like this
 ``` 
-d{
-    3: 2,
-    4: 3,
-    5: 5
-}
 ```
 <br/>
 
-## Grid-Traveler Problem <br/>
+<!-- ## Grid-Traveler Problem <br/>
 ### Q. Say that you are a traveler on a 2D grid. You begin in the top-left corner and your goal is to travel to the bottom-right corner. You may only move down right or left. In how many ways can you travel to the goal on a grid with dimensions m*n? <br/>
 So, the ques can be soved easily with a time-complexity of O(n+m) using the memoization technique. We will store the grids that we have already calculated in a HashMap and use them to calculate the no. of ways of the bigger grids eg. for a  2,3 grid given in the image we can see that there are many grids that are repeating for eg. (1,2) so we can calculate the no. of ways of that grid once and store it in the HashMap. This method brings down the complexity from O(2^(n*m)) to O(n+m).
 <p align="center">
@@ -88,4 +85,4 @@ The function should return all the ways that the target can be constructed by co
 <p align="center">
 <img src="./imgs/allconstruct.png" alt="Image" width="300">
 </p>
-Let m be the height of the tree and n be the no. of elements in the array. So the total no. of combinations will be equal to n^m. So, we'll have n^m sub-arrays as output. So the time-complexity will be O(n^m) and space complexity will be O(m).
+Let m be the height of the tree and n be the no. of elements in the array. So the total no. of combinations will be equal to n^m. So, we'll have n^m sub-arrays as output. So the time-complexity will be O(n^m) and space complexity will be O(m). -->

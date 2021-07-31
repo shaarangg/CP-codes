@@ -1,5 +1,8 @@
+import sys
+
 d = {}
 n = int(input())
+sys.setrecursionlimit(10 ** 9)
 
 
 def fib(n, d):
