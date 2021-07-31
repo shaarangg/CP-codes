@@ -71,12 +71,21 @@ The function returns the shortest combination of numbers that add up to exactly 
 <br/>
 
 ## canConstruct Memoization
-### Q. Write a function ```canConstruct(target, a)``` that takes in a targetSum and an array of strings as arguements.
-The function should return boolean indicating true wether or not it is possible to generate the targetSum using numbers from the array.
+### Q. Write a function ```canConstruct(target, a)``` that takes in a target string and an array of strings as arguements.
+The function should return boolean indicating true wether or not it is possible to generate the target string using the array of strings.
 So the time-complexity of the code without using memoization is O((n^m)*m) and space complexity is O(m^2). After using meoization the time-complexity changes to O((n*m)*m) and space-complexity remains the same.
 <br/>
 
 ## countConstruct Memoization
-### Q. Write a function ```countConstruct(target, a)``` that takes in a targetSum and an array of strings as arguements.
+### Q. Write a function ```countConstruct(target, a)``` that takes in a target string and an array of strings as arguements.
 The function should return the number of ways that the target can be constructed by concatenating elements of the array of elements.
 So the time-complexity of the code without using memoization is O((n^m)*m) and space complexity is O(m^2). After using meoization the time-complexity changes to O((n*m)*m) and space-complexity remains the same.
+<br/>
+
+## allConstruct Memoization
+### Q. Write a function ```allConstruct(target, a)``` that takes in a target string and an array of strings as arguements.
+The function should return all the ways that the target can be constructed by concatenating elements of the array of elements.
+<p align="center">
+<img src="./imgs/allconstruct.png" alt="Image" width="300">
+</p>
+Let m be the height of the tree and n be the no. of elements in the array. So the total no. of combinations will be equal to n^m. So, we'll have n^m sub-arrays as output. So the time-complexity will be O(n^m) and space complexity will be O(m).
