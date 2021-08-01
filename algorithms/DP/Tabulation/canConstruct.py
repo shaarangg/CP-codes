@@ -5,8 +5,7 @@ def canConstruct(s):
     for i in range(l):
         if table[i]:
             for j in a:
-                suffix = s[i:]
-                if suffix.startswith(j):
+                if s[i : i + len(j)]==j:
                     table[i + len(j)] = True
     print(table)
     return table[l]

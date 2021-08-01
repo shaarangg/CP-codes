@@ -55,13 +55,13 @@ Our final table will look like this with complexity of O(mn)
 ## HowSum Tabulation
 ### Q. Write a function ```howSum(howSum, numbers)``` that takes in a targetSum and an array of numbers as arguements.
 The function should return an array containing any combination of elemnts that add up to exactly the targetSum. If there is no combination that adds up to the targetSum, then return null.
-Here the time-complexity is (n^m)*m.
+Here the time-complexity is (n*m)*m.
 
 <br/>
 
 ## BestSum Tabulation
 ### Q. Write a function ```bestSum(howSum, numbers)``` that takes in a targetSum and an array of numbers as arguements.
-Time-complexity is (n^m)*m.
+Time-complexity is (n*m)*m.
 
 <br/>
 
@@ -86,10 +86,10 @@ Finally our table will look something like this..
 </p>
 <br/>
 
-<!-- ## countConstruct Memoization
+## countConstruct Tabulation
 ### Q. Write a function ```countConstruct(target, a)``` that takes in a target string and an array of strings as arguements.
-The function should return the number of ways that the target can be constructed by concatenating elements of the array of elements.
-So the time-complexity of the code without using memoization is O((n^m)*m) and space complexity is O(m^2). After using meoization the time-complexity changes to O((n*m)*m) and space-complexity remains the same.
+The function should return the number of ways that the target can be constructed by concatenating elements of the array of elements.<br>
+Time-complexity of the problem is O((n*m)*m).
 <br/>
 
 ## allConstruct Memoization
@@ -98,4 +98,4 @@ The function should return all the ways that the target can be constructed by co
 <p align="center">
 <img src="./imgs/allconstruct.png" alt="Image" width="300">
 </p>
-Let m be the height of the tree and n be the no. of elements in the array. So the total no. of combinations will be equal to n^m. So, we'll have n^m sub-arrays as output. So the time-complexity will be O(n^m) and space complexity will be O(m). -->
+Let m be the height of the tree and n be the no. of elements in the array. So the total no. of combinations will be equal to n^m. So, we'll have n^m sub-arrays as output. So the time-complexity will be O(n^m) and space complexity will be O(m).
