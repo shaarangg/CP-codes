@@ -34,14 +34,23 @@ So, we need to find how our current position in the table affects the immediate 
 </p>
 <br/>
 
-<!-- ## CanSum Memoization
+## CanSum Memoization
 ### Q. Write a function ```canSum(targeSum, numbers)``` that takes in a targetSum and an array of numbers as arguements.
 The function should return boolean indicating true wether or not it is possible to generate the targetSum using numbers from the array. <br/><br/>
 You may use an element of the array as many times as needed. <br/><br/>You may assume that all input numbers are non-negative.
-
+<p align="center">
+<img src="./imgs/cansum.png" alt="Image" width="300">
+</p>
+In this ques, we make a N+1 table and initialize all the values of the table to False. We pick the seed value 0 as make it True because you don't need any number to generate 0.
+We then check the current pos in the table and if it's true we make the current pos + the number in our list also true.
+So our  table initially looks like this 
+```
+table = [False, False, False, False, False, False.....]
+```
+Our final table is given in the image.
 <br/>
 
-## HowSum Memoization
+<!-- ## HowSum Memoization
 ### Q. Write a function ```howSum(howSum, numbers)``` that takes in a targetSum and an array of numbers as arguements.
 The function should return an array containing any combination of elemnts that add up to exactly the targetSum. If there is no combination that adds up to the targetSum, then return null.
 So, as you can see using the memoization the time-complexity changes from O((n^m)*m), so here the time-complexity is (n^m)*m because the number of recursion calls = n^m and the it takes m-time to copy the old list and add an new element to O(n*m^2 ), here the it takes only n*m recursion calls and space complexity changed from O(m) to O(m^2), here m^2 is because the HashMap holds m keys with a list.
