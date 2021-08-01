@@ -90,12 +90,14 @@ Finally our table will look something like this..
 ### Q. Write a function ```countConstruct(target, a)``` that takes in a target string and an array of strings as arguements.
 The function should return the number of ways that the target can be constructed by concatenating elements of the array of elements.<br>
 Time-complexity of the problem is O((n*m)*m).
+
 <br/>
 
-## allConstruct Memoization
+## allConstruct Tabulation
 ### Q. Write a function ```allConstruct(target, a)``` that takes in a target string and an array of strings as arguements.
 The function should return all the ways that the target can be constructed by concatenating elements of the array of elements.
+<br> The table will look something like this
 <p align="center">
-<img src="./imgs/allconstruct.png" alt="Image" width="300">
+<img src="./imgs/allconst.png" alt="Image" width="300">
 </p>
-Let m be the height of the tree and n be the no. of elements in the array. So the total no. of combinations will be equal to n^m. So, we'll have n^m sub-arrays as output. So the time-complexity will be O(n^m) and space complexity will be O(m).
+The problem will have an exponential space and time complexity.
