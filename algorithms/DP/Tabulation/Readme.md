@@ -34,7 +34,7 @@ So, we need to find how our current position in the table affects the immediate 
 </p>
 <br/>
 
-## CanSum Memoization
+## CanSum Tabulation
 ### Q. Write a function ```canSum(targeSum, numbers)``` that takes in a targetSum and an array of numbers as arguements.
 The function should return boolean indicating true wether or not it is possible to generate the targetSum using numbers from the array. <br/><br/>
 You may use an element of the array as many times as needed. <br/><br/>You may assume that all input numbers are non-negative.
@@ -65,13 +65,28 @@ Time-complexity is (n^m)*m.
 
 <br/>
 
-<!-- ## canConstruct Memoization
+## canConstruct Tabulation
 ### Q. Write a function ```canConstruct(target, a)``` that takes in a target string and an array of strings as arguements.
 The function should return boolean indicating true wether or not it is possible to generate the target string using the array of strings.
-So the time-complexity of the code without using memoization is O((n^m)*m) and space complexity is O(m^2). After using meoization the time-complexity changes to O((n*m)*m) and space-complexity remains the same.
+We make a table of length of the target string + 1 and initialize all the elements as False. Initially the table will look like this
+```python
+    table = [False, False, False ...]
+```
+We then choose 0th element of the table as seed value and initializes it to True. We choose the 0th element as True because we consider that each cell of the table represents a character of a string.
+<p align="center">
+<img src="./imgs/canconst2.png" alt="Image" width="300">
+</p>
+If the value of a cell is True that means that the string from the target string till cell-1 character can be generated using the array of strings.
+<p align="center">
+<img src="./imgs/canconst3.png" alt="Image" width="300">
+</p>
+Finally our table will look something like this..
+<p align="center">
+<img src="./imgs/canconst.png" alt="Image" width="300">
+</p>
 <br/>
 
-## countConstruct Memoization
+<!-- ## countConstruct Memoization
 ### Q. Write a function ```countConstruct(target, a)``` that takes in a target string and an array of strings as arguements.
 The function should return the number of ways that the target can be constructed by concatenating elements of the array of elements.
 So the time-complexity of the code without using memoization is O((n^m)*m) and space complexity is O(m^2). After using meoization the time-complexity changes to O((n*m)*m) and space-complexity remains the same.
