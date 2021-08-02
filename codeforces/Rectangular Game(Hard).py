@@ -1,14 +1,14 @@
-from math import ceil, sqrt
+def checkPrime(n):
+    c = 0
+    for i in range(2, int(n ** (0.5)) + 1):
+        if n % i == 0:
+            return n // i
+    return 1
+
 
 n = int(input())
-spf = [i for i in range(n + 1)]
-for i in range(2, ceil(sqrt(n))):
-    if spf[i] == i:
-        for j in range(i * i, n + 1, i):
-            if spf[j] == j:
-                spf[j] = i
 s = n
 while n > 1:
-    n //= spf[n]
+    n = checkPrime(n)
     s += n
 print(s)
