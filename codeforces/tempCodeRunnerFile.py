@@ -1,2 +1,2 @@
-            # print(index)
-            # print(j + 1)
+    for j in range(n):
+        b[j] = d[b[j]]
