@@ -1,5 +1,5 @@
-i = 0
-a = [1]
-while i < len(a):
-    a.append(1)
-    print("hello")
+a = "hello"
+b = "ello"
+for i in a:
+    if i in b:
+        print(i)
