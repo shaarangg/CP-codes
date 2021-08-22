@@ -19,6 +19,6 @@ int main()
     {
         s.erase(0, 1);
     }
-    cout << s << endl;
+    cout << s << '\n';
     return 0;
 }
