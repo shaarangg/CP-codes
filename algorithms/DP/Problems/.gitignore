@@ -1,3 +1,5 @@
 *.exe
 Dynamic Programming Questions.pdf
-Special_intervals.cpp
+Maximum_score.cpp
+Spiral_Traversal_grid.cpp
+minimum_sum_in_subarray.cpp
