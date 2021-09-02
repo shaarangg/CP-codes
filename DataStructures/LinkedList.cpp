@@ -60,8 +60,32 @@ void printlist(Node *node)
         cout << node->data << " ";
         node = node->next;
     }
+    cout << endl;
 }
-
+void deleteNode(Node **head, int key)
+{
+    Node *temp = *head, *prev = NULL;
+    if (temp != NULL && temp->data == key)
+    {
+        *head = temp->next;
+        delete temp;
+        return;
+    }
+    else
+    {
+        while (temp != NULL && temp->data != key)
+        {
+            prev = temp;
+            temp = temp->next;
+        }
+        if (temp == NULL)
+        {
+            cout << "Element not found" << endl;
+        }
+        prev->next = temp->next;
+        delete temp;
+    }
+}
 int main()
 {
     Node *head = NULL;
@@ -70,6 +94,10 @@ int main()
     push(&head, 1);
     append(&head, 4);
     insertAfter(head->next, 8);
+    // Elements before deletion
+    printlist(head);
+    // Elements after deletion
+    deleteNode(&head, 7);
     printlist(head);
     return 0;
 }
