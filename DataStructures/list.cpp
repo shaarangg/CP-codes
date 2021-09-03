@@ -43,8 +43,6 @@ int main()
     l3.push_back(433);
     l3.push_back(948);
     display(l3);
-    l3.sort();
-    display(l3);
 
     // Reversing a list
     list<int> l4;
