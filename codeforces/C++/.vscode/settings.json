@@ -4,6 +4,7 @@
         "type_traits": "cpp",
         "*.tcc": "cpp",
         "string": "cpp",
-        "cmath": "cpp"
+        "cmath": "cpp",
+        "ostream": "cpp"
     }
 }
